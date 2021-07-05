@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    color: black;
+}
+
+img{
+    width: 200px;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-image: url('../img/backgound3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    animation: 1s header-desk;
+}
+
+@keyframes header-desk {
+    0% {
+        top: -500px;
+    }
+    100% {
+       top: 0px;
+    }
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-logo img{
+    width: 150px;
+    display: flex;
+}
+
+.menu-itens{
+    margin:  0 auto;
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+}
+
+.menu-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a::before {
+    content: '';
+    width: 0px;
+    height: 5px;
+    display: block;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 100px;
+    transition: all 0.3s;
+}
+  
+.menu-nav a:hover::before {
+    width: 100px;
+    background: #3f2a10;
+}
+.menu-nav a{
+    color: #3f2a10;
+    margin-left: 100px;
+    font-weight: bold;
+    line-height: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 40px;
+}
+.cover{
+    width: 100%;
+    margin-bottom: 250px;
+}
+
+.titulocurio{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1600px;
+    cursor: pointer;
+    padding: 20px;
+    animation: 3s;
+}
+
+.titulocurio h1{
+    font-size: 25pt;
+}
+
+.titulocurio h1:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
+}
+
+.curiosidade-bg{
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.curiosidade{
+    background-color: #F9CA90;
+    box-shadow: 0 0 1em grey;
+    width: 900px;
+    flex-wrap: wrap;
+}
+.curiosidade p{
+    padding: 20px;
+}
+
+
+#menu-mobile{
+    display: none;
+}
+
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #815e32;
+    width: 290px;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    border-radius: 12px;
+    animation: .3s menu-mobile;
+}
+
+.header-mobile{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.open-menu{
+    display: none;
+}
+
+.header-mobile svg{
+    stroke: white;
+}
+
+.body-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-mobile a{
+    color: white;
+}
+
+.menu-mobile a {
+    border-bottom: 0.02rem solid white;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu-mobile a:last-child{
+    border: none;
+}
+
+@keyframes menu-mobile {
+    0% {
+        left: -500px;
+    }
+    100% {
+       left: 0px;
+    }
+}
+
+@media(max-width: 1200px){
+    .menu-nav{
+        display: none;
+    }
+    .open-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 10px;
+    }
+    .menu-logo{
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .menu-logo a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-logo a img{
+        width: 130px;
+    }
+    header{
+        padding: 20px;
+        width: 100%;
+    }
+    .menu-items{
+        margin: 0;
+        padding: 0px;
+        width: 100%;
+        align-items: center;
+    }
+}
+/* MEDIA QUERIES MENU MOBILE */
+@media (max-width: 1000px){
+    .cover-items h1{ 
+        font-size: 100px;
+    }
+}
+@media (max-width: 835px){
+    .cover-items h1{ 
+        font-size: 40px;
+    }
+}
+@media (max-width: 425px){
+    .cover-items h1{ 
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 375px){
+    .cover-items h1{ 
+        font-size: 20px;
+    }
+
+}
+
+/* MEDIA QUERIES TITULO */
+
+@media(max-width: 500px){
+    .titulocurio{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width:300px;
+        cursor: pointer;
+        padding: 20px;
+        animation: 3s;
+    }
+    
+    .titulocurio h1{
+        font-size: 25pt;
+    }
+    
+    .titulocurio h1:hover{
+        transition: 0.4s;
+        transform: scale(1.05);
+    }
+}
+
+/* MEDIA QUERIES MENU */
+@media(max-width: 500px){
+    .menu-itens{
+        width: 200px;
+    }
+    .menu-logo img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -20px;
+    }
+    .menu-nav a{
+        margin-right: 0px;
+    }
+}

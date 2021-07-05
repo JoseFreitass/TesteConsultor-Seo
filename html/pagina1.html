@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XadrezRocky</title>
+    <!-- Fonte - Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/pagina1.css">
+    <link rel="sortcut icon" href="../img/logo.png"/>
+    <!-- SCRIPTS  -->
+    <script src="../menu.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-itens">
+            <div class="menu-logo">
+                <a href= "../index.html" target="_self"><img src="../img/logo.png"></a>
+            </div>
+            <div class="menu-nav">
+                <ul>
+                    <li>
+                        <a class="hover" href="pagina1.html">APRENDA</a>
+                    </li>
+                    <li>
+                        <a class="hover" href="taticas.html">TÁTICAS BÁSICAS</a>
+                    </li>
+                    <li>
+                        <a  class="hover" href="curiosidade.html">CURIOSIDADES</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="header-mobile">
+                <svg onclick="menuMobile()" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </div>
+            <div class="body-mobile">
+
+                <a href="../index.html">PÁGINA INICIAL</a>
+
+                <a href="pagina1.html">APRENDA</a>
+            
+                <a href="taticas.html">TÁTICAS BÁSICAS</a>
+    
+                <a href="curiosidade.html">CURIOSIDADES</a>
+            </div>
+        </div>
+        <div class="open-menu" id="open-menu" onclick="menuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+            </svg>
+        </div>
+    </header>
+    <div class="cover">  
+    </div>
+    <div class="titulo">
+        <div class="titulotatica">
+            <h1>Conheça sobre o tabuleiro e as peças.<h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="itens-cover">
+            <div class="itens">
+                <a href="#" target="_self"><img src="../img/tabuleiroprojeto.png"></a>
+                <p>O tabuleiro de Xadrez possui 64 casas distribuídas em 8 fileiras   (horizontais) e 8 colunas (verticais), sendo que as colunas é designada por uma letra (<strong>A</strong> a <strong>H</strong>) enquanto as fileiras de um número (<strong>1</strong> a <strong>8</strong>), portanto pela letra e pelo número podemos identificar as jogadas.</p>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <p>O peão é a peça com menos valor, mas ela pode ser promovida a qualquer peça do xadrez se chegar na última fileira, exceto o rei. No início cada jogador possui <strong>8</strong> peões começando sempre na segunda fileira caso esteja jogando de brancas e de negras se inicia na sétima.</p>
+                <a href="#" target="_self"><img src="../img/peaoprojeto.png"></a>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <a href="#" target="_self"><img src="../img/cavaloprojeto.png"></a>
+                <p>O cavalo é a peça mais complexa do Xadrez, pois se move em "L" podendo ter ataques duplos e aplicando xeque-mate sufocado. Cada jogador se inicia com dois cavalos, sendo nas casas de (<strong>B1</strong> E <strong>G1</strong>) para as brancas e nas casas de (<strong>B8</strong> E <strong>G8</strong>) para as negras.</p>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <p>O bispo é uma peça intrigante, pois tem total liberdade no tabuleiro, mas sempre se movendo nas diagonais, está localizada ao lado do cavalo nas casas <strong>(f1)</strong> para o bispo de casas brancas e <strong>(c1)</strong> para o bispo de casas escuras. Para as Negras está localizada na casa de <strong>(c8)</strong> para o bispo de casas claras e em <strong>(f8)</strong> o bispo de casas escuras.</p>
+                <a href="#" target="_self"><img src="../img/bispoprojeto.png"></a>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <a href="#" target="_self"><img src="../img/torreprojeto.png"></a>
+                <p>A torre é a segunda peça mais forte do xadrez ficando atrás da dama, ela se destaca pelo famoso xeque-mate em escadinha ou mate do corredor. Cada jogador se inicia com duas torre posicionadas nos cantos do tabuleiro podendo se mover apenas em linhas retas sem restrições de casas.</p>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <p>A dama é a peça mais forte do xadrez sendo utilizada com extremamente frequência nas partidas, tem um ataque poderoso e efetivo para os seus oponentes se movimentando para qualquer posição quantas casas necessárias. Cada jogador possui uma dama localizada nas casas de <strong>(D1)</strong> para as brancas e em <strong>(D8)</strong> para as negras.</p>
+                <a href="#" target="_self"><img src="../img/damaprojeto.png"></a>
+            </div>
+        </div>
+        <div class="itens-cover">
+            <div class="itens">
+                <a href="#" target="_self"><img src="../img/reiprojeto.png"></a>
+                <p>O rei não é a peça mais poderosa, mas é a peça com maior importância! Se estiver em xeque-mate a partida é finalizada. Sendo assim o rei não pode ser capturado e sim emboscado pelo seu oponente. Localizado ao lado da dama podendo andar uma casa por vez em qualquer direção.</p>
+            </div>
+        </div><br><br><br><br>
+    </div>
+</body>
